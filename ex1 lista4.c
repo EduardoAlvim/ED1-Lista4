@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Faça uma função que receba 3 números e retorne para o programa principal os 3 números em ordem crescente. Mostre o resultado no programa  principal. */
+/*FaÃ§a uma funÃ§Ã£o que receba 3 nÃºmeros e retorne para o programa principal os 3 nÃºmeros em ordem crescente. Mostre o resultado no programa  principal. */
 
 void retornaNum(int a, int b, int c, int *ma, int *med, int *men);
 
@@ -25,19 +25,17 @@ void retornaNum(int a, int b, int c, int *ma, int *med, int *men){
     if(b>*ma){
         *ma = b;
     }
-    else if(b<*men){
-        *men = b;
-    }
     else{
-        *med = b;
+        *med=b;
+        *men=b;
     }
     if(c>*ma){
         *ma = c;
     }
-    else if(c<*men){
-        *men = c;
+    else if(c<*ma && c>*med){
+        *med=c;
     }
     else{
-        *med = c;
+        *men=c;
     }
 }
