@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*Faça uma função que receba uma string e dobre todas as palavras existentes, mostre o resultado no programa principal. 
+Exemplo: Original : O rato roeu a roupa do rei de roma Resultado: O O rato rato roeu roeu a a roupa roupa do do rei rei de de roma roma */
+
 void retornaFrase(char frase[], char frasef[]);
 
 void main()
